@@ -1,0 +1,78 @@
+:root {
+  --azul: rgb(22, 36, 233);
+}
+.main {
+  min-height: 100vh;
+  position: relative;
+  color: white;
+  text-align: justify;
+}
+.titulo {
+  width: 350px;
+  position: relative;
+  top: 100px;
+  left: 42%;
+}
+p
+{
+    margin: 15px;;
+}
+.contenido {
+  position: relative;
+  width: 600px;
+  height: 500px;
+  margin: 0px 80px;
+  top: 130px;
+  left: 20%;
+  font-size: 17px;
+}
+.planes {
+  border-collapse: collapse;
+  left: 40%;
+  float: left;
+  border-radius: 10px;
+}
+.planes th {
+  width: 250px;
+  text-align: center;
+}
+.titulos {
+  background-color: var(--azul);
+  font-size: 20px;
+}
+.titulos th {
+  border: 1px solid var(--azul);
+}
+.plan {
+  background-color: white;
+  font-size: 18px;
+  color: black;
+}
+.plan th {
+  border: 1px solid var(--azul);
+  padding: 10px 0;
+}
+.plan:hover {
+  background-color: var(--azul);
+  transition: all 400ms ease;
+  color: white;
+}
+.info {
+  width: 250px;
+  height: auto;
+  padding: 10px;
+  position: relative;
+  background-color: var(--azul);
+  float: right;
+  display: none;
+  border-radius: 10px;
+}
+.info p{
+    margin: 10px 0;
+}
+.info label{
+    padding: 10px;
+}
+.info div{
+    display: flex;
+}

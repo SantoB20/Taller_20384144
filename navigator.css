@@ -1,0 +1,83 @@
+:root {
+  --azul: rgb(22, 36, 233);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+  font-family: "Oswald", sans-serif;
+  background-image: url("Images/Fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.navbar ul {
+  background-color: var(--azul);
+  line-height: 25px;
+}
+.navbar li {
+  display: inline-block;
+  text-align: center;
+}
+.contact {
+  background-color: white;
+  width: 300px;
+  font-size: 40px;
+  float: left;
+  line-height: 25px;
+}
+.contact a {
+  color: black;
+}
+.contact a,
+.path a {
+  text-decoration: none;
+  display: block;
+  width: 120px;
+  padding: 23px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.path a {
+  color: white;
+  font-size: 20px;
+}
+.path a:hover {
+  background-color: white;
+  color: var(--azul);
+  transition: all 600ms ease;
+}
+.deportes {
+  display: none;
+}
+.navbar ul li:hover .deportes {
+  display: block;
+  position: absolute;
+}
+footer{
+  background-color: var(--azul);
+  color: white;
+  width: 100%;
+  padding: 1em 0;
+  text-align: center;
+  bottom: 0;
+}
+@keyframes bgcolor{
+  50%
+  {
+      background-color: white;
+      color: var(--azul);
+  }
+  100%
+  {
+      background-color: var(--azul);
+      color: white;
+  }
+}

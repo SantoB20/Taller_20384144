@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contáctanos</title>
+    <link href="..\navigator.css" rel="stylesheet" />
+    <link href="contacto.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="contacto.js"></script>
+  </head>
+
+  <body>
+    <!-- Init Navegador-->
+    <nav class="navbar">
+      <ul class="navbackground">
+        <li class="contact">
+          <a href="..\index.html">Contact</a>
+        </li>
+        <li class="path">
+          <a href="..\index.html">Inicio</a>
+        </li>
+        <li class="path">
+          <a href="..\nosotros\nosotros.html">Nosotros</a>
+        </li>
+        <li class="path">
+          <a href="../deportes/deportes.html">Deportes</a>
+          <div>
+            <ul class="deportes">
+              <li class="path">
+                <a href="../deportes/muaythai.html">Muay Thai</a>
+              </li>
+              <li class="path">
+                <a href="../deportes/mma.html">MMA</a>
+              </li>
+              <li>
+                <a href="../deportes/kickboxing.html">Kickboxing</a>
+              </li>
+              <li class="path">
+                <a href="../deportes/bjj.html">Jiu Jitsu</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="path">
+          <a href="..\servicios\clases.html">Clases</a>
+        </li>
+        <li class="path">
+          <a href="contacto.html">Contáctanos</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- End Navegador-->
+    <!--Init main-->
+    <div class="main">
+      <h1 class="titulo">Contáctanos</h1>
+      <div class="contenido">
+        <p>
+          Si quiere saber más de nosotros, otra información o tienes una
+          opinión, háznolo saber:
+        </p>
+        <form class="contacto" autocomplete="off">
+          <div class="nombre-email">
+            <input
+              type="text"
+              name="Nombre"
+              id="txtnombre"
+              placeholder="Nombre"
+            />
+          </div>
+          <div class="nombre-email">
+            <input
+              type="email"
+              name="Email"
+              id="txtemail"
+              placeholder="Email"
+            />
+          </div>
+          <div class="asunto">
+            <input
+              type="text"
+              name="Asunto"
+              id="txtasunto"
+              placeholder="Asunto"
+            />
+          </div>
+          <div class="mensaje">
+            <textarea
+              name="Mensaje"
+              id="txtmensaje"
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+            ></textarea>
+          </div>
+          <div>
+            <button type="button" onclick="info()">Enviar</button>
+          </div>
+        </form>
+        <div class="info" id="div-info">
+          <div>
+            <p>Nombre:</p>
+            <label id="inombre"></label>
+          </div>
+          <div>
+            <p>Email:</p>
+            <label id="iemail"></label>
+          </div>
+          <div>
+            <p>Asunto:</p>
+            <label id="iasunto"></label>
+          </div>
+          <div>
+            <p>Mensaje:</p>
+            <label id="imensaje"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End main-->
+    <footer>
+      <p>
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Contact academy
+      </p>
+    </footer>
+  </body>
+</html>

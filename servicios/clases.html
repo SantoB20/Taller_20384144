@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clases</title>
+    <link href="..\navigator.css" rel="stylesheet" />
+    <link href="clases.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="clases.js"></script>
+  </head>
+  <body>
+    <!-- Init Navegador-->
+    <nav class="navbar">
+      <ul class="navbackground">
+        <li class="contact">
+          <a href="..\index.html">Contact</a>
+        </li>
+        <li class="path">
+          <a href="..\index.html">Inicio</a>
+        </li>
+        <li class="path">
+          <a href="..\nosotros\nosotros.html">Nosotros</a>
+        </li>
+        <li class="path">
+          <a href="../deportes/deportes.html">Deportes</a>
+          <div>
+            <ul class="deportes">
+              <li class="path">
+                <a href="../deportes/muaythai.html">Muay Thai</a>
+              </li>
+              <li class="path">
+                <a href="../deportes/mma.html">MMA</a>
+              </li>
+              <li>
+                <a href="../deportes/kickboxing.html">Kickboxing</a>
+              </li>
+              <li class="path">
+                <a href="../deportes/bjj.html">Jiu Jitsu</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="path">
+          <a href="clases.html">Clases</a>
+        </li>
+        <li class="path">
+          <a class="nav-link active" href="..\contacto\contacto.html"
+            >Contáctanos</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- End Navegador-->
+    <!--Init main-->
+    <div class="main">
+      <h1 class="titulo">Planes</h1>
+      <div class="contenido">
+        <p>
+          Acá puedes ver todos los planes que puedes contratar par que hagas parte de la familia Contact.
+        </p>
+        <table class="planes">
+          <thead class="titulos">
+            <tr>
+              <th>Plan</th>
+            </tr>
+          </thead>
+          <thead class="plan">
+            <tr id="bronce" onmouseover="info(bronce)" onmouseout="hide()">
+              <th>Bronce</th>
+            </tr>
+          </thead>
+          <thead class="plan">
+            <tr id="plata" onmouseover="info(plata)" onmouseout="hide()">
+              <th>Plata</th>
+            </tr>
+          </thead>
+          <thead class="plan">
+            <tr id="oro" onmouseover="info(oro)" onmouseout="hide()">
+              <th>Oro</th>
+            </tr>
+          </thead>
+          <thead class="plan">
+            <tr id="diamante" onmouseover="info(diamante)" onmouseout="hide()">
+              <th>Diamante</th>
+            </tr>
+          </thead>
+        </table>
+        <div class="info" id="div-info">
+          <div>
+            <p>Cantidad de artes marciales:</p>
+            <label id="cantA"></label>
+          </div>
+          <div>
+            <p>Clases a la semana:</p>
+            <label id="cantC"></label>
+          </div>
+          <div>
+            <p>1 mes:</p>
+            <label id="1m"></label>
+          </div>
+          <div>
+            <p>3 meses:</p>
+            <label id="3m"></label>
+          </div>
+          <div>
+            <p>6 meses:</p>
+            <label id="6m"></label>
+          </div>
+          <div>
+            <p>1 año:</p>
+            <label id="1a"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End main-->
+    <footer>
+      <p>
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Contact academy
+      </p>
+    </footer>
+  </body>
+</html>
